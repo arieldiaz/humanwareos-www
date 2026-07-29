@@ -1,20 +1,47 @@
-# HumanwareOS website
+# humanwareos-www
 
-The public website for [humanwareos.com](https://humanwareos.com).
+The public site for [www.humanwareos.com](https://www.humanwareos.com).
 
-HumanwareOS is an open-source, human-first operating system for running life
-and work with AI agents through Slack. This repository is deliberately static:
-plain HTML, CSS, and a tiny amount of JavaScript, deployed on Cloudflare Pages.
+HumanwareOS is the upstream framework people fork. The code lives in
+[`arieldiaz/life-os`](https://github.com/arieldiaz/life-os) (rename to
+`humanwareos` pending). This repo is only the site.
 
-## Local preview
+## Stack
+
+Static HTML and one stylesheet. No framework, no build step, no dependencies —
+what is in this directory is what ships.
+
+```
+index.html      the whole site, one page, anchored sections
+styles.css      tokens + layout
+assets/         logo mark, agent app icons, model + harness tiles
+```
+
+## Design
+
+Direction C, "site as system spec sheet", from the design exploration at
+`ariel-os/apps/design-hq/versions/2026-07-29-humanwareos-site-direction/`.
+Palette and type are tokens at the top of `styles.css`. Ocean carries the
+secondary accent; fire carries the primary. The mark is the layer stack with
+its base rung split ocean / grey / fire — life and work meeting at the
+foundation.
+
+Dark only for now. Light mode is the next pass.
+
+## Preview
 
 ```sh
 python3 -m http.server 4173
 ```
 
-Open `http://localhost:4173`.
-
 ## Deploy
 
-The production site is deployed from this directory to the `humanwareos-www`
-Cloudflare Pages project.
+Cloudflare Pages project `humanwareos-www`, custom domain `www.humanwareos.com`.
+No build command; the repo root is the output.
+
+```sh
+npx wrangler pages deploy . --project-name humanwareos-www --branch main
+```
+
+The token needs Account → Cloudflare Pages → Edit and Zone → DNS → Edit on
+`humanwareos.com`. Key names only — never a value in this repo.
