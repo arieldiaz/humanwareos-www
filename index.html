@@ -1,145 +1,184 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HumanwareOS — an operating system for the top rung</title>
-<meta name="description" content="Hardware, firmware, software, humanware. Every rung got an operating system except the top one. HumanwareOS is an open, opinionated system for running your life and your work through agents — in Slack, on your own machine, in plain files.">
-<meta name="theme-color" content="#0b0c0e">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://humanwareos.com/">
-<meta property="og:title" content="HumanwareOS — an operating system for the top rung">
-<meta property="og:description" content="Every rung got an operating system except the top one. An open, opinionated system for running your life and your work through agents.">
-<meta property="og:image" content="https://humanwareos.com/assets/og.png">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://humanwareos.com/">
-<link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HumanwareOS is an open-source operating system for running your life and work with AI agents through Slack.">
+    <meta name="theme-color" content="#f4f0e7">
+    <meta property="og:title" content="HumanwareOS">
+    <meta property="og:description" content="Agents changed computing. HumanwareOS makes them work for you.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://humanwareos.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>HumanwareOS — AI that works for you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,400;9..144,600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="HumanwareOS home">
+        <svg viewBox="0 0 44 44" aria-hidden="true">
+          <path d="M8 10v24M36 10v24M8 22h28"></path>
+          <circle cx="8" cy="10" r="3"></circle>
+          <circle cx="36" cy="34" r="3"></circle>
+        </svg>
+        <span>HumanwareOS</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#why">Why</a>
+        <a href="#system">System</a>
+        <a href="#stack">Stack</a>
+        <a class="nav-action" href="https://github.com/arieldiaz/life-os">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
 
-<a class="skip" href="#main">Skip to content</a>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">Open source · built in public by Ariel Diaz</p>
+          <h1>Agents changed computing.<br><em>Now it works for you.</em></h1>
+          <p class="lede">HumanwareOS is an opinionated system for running your life and work with AI agents—through Slack, on infrastructure you control, with memory that compounds.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/arieldiaz/life-os">Explore the source <span aria-hidden="true">↗</span></a>
+            <a class="button text-button" href="#system">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
 
-<header class="topbar">
-  <a class="wordmark" href="/">
-    <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="17" width="20" height="4" rx="1"/><rect x="2" y="12" width="20" height="4" rx="1"/><rect x="2" y="7" width="20" height="4" rx="1"/><circle cx="12" cy="3.4" r="2.6"/></svg>
-    <span>HumanwareOS</span>
-  </a>
-  <nav aria-label="Sections">
-    <a href="#thesis">Thesis</a>
-    <a href="#vision">Vision</a>
-    <a href="#architecture">Architecture</a>
-    <a class="cta" href="https://github.com/arieldiaz/life-os">GitHub&nbsp;<span aria-hidden="true">↗</span></a>
-  </nav>
-</header>
+        <div class="slack-window" aria-label="Example HumanwareOS conversation in Slack">
+          <div class="slack-rail" aria-hidden="true">
+            <span class="workspace">H</span>
+            <span></span><span></span><span></span>
+          </div>
+          <div class="slack-sidebar" aria-hidden="true">
+            <strong>humanware</strong>
+            <small>Threads</small>
+            <small>Later</small>
+            <p>Channels</p>
+            <b># work</b>
+            <small># personal</small>
+            <small># building</small>
+          </div>
+          <div class="slack-thread">
+            <div class="thread-top"><strong># work</strong><span>🔄 🦊 ◈ GPT</span></div>
+            <article>
+              <span class="avatar ariel">A</span>
+              <div><strong>Ariel <time>9:14</time></strong><p>Take the website from outline to live. Keep me out of the machinery.</p></div>
+            </article>
+            <article>
+              <span class="avatar max">M</span>
+              <div><strong>Max <time>9:14</time></strong><p>I’ve got the narrative, build, repo, and deploy. I’ll bring back the result.</p></div>
+            </article>
+            <div class="artifact-row"><span>↗</span><div><strong>humanwareos.com</strong><small>Published artifact · source linked</small></div><b>Live</b></div>
+          </div>
+        </div>
+        <p class="scroll-cue" aria-hidden="true">The interface is the one you already know.</p>
+      </section>
 
-<main id="main">
+      <section class="statement" id="why">
+        <p class="section-label">The inversion</p>
+        <div>
+          <h2>We used to work for technology.<br>Agents make technology work for us.</h2>
+          <p>That should feel freeing. Instead, most agent tools add tabs, dashboards, prompts, and cognitive load. HumanwareOS starts from the human: one familiar command surface, visible parallel work, and a system that remembers why—not just what.</p>
+        </div>
+      </section>
 
-  <section class="hero">
-    <p class="eyebrow">Open source · built in public · v0, in daily use</p>
-    <h1>There is an operating system for your computer.<br><em>There isn't one for you.</em></h1>
-    <p class="lede">HumanwareOS is the layer above the software: your agents, your memory, your work and your life, running in one place you already know how to use. It runs on your own machine, in plain files, with no lock-in to any model or vendor.</p>
-    <div class="actions">
-      <a class="btn primary" href="#thesis">Read the thesis</a>
-      <a class="btn" href="https://github.com/arieldiaz/life-os">View the repo <span aria-hidden="true">↗</span></a>
-    </div>
-  </section>
+      <section class="slack-case">
+        <div class="section-intro">
+          <p class="section-label">Why Slack</p>
+          <h2>The operating room was already built.</h2>
+          <p>Slack already knows how to run a team. HumanwareOS turns that proven coordination layer into a command surface for your agents.</p>
+        </div>
+        <div class="capability-list">
+          <article><span>01</span><h3>Parallel without chaos</h3><p>One thread per mission. Work happens concurrently without shredding your attention.</p></article>
+          <article><span>02</span><h3>Status at a glance</h3><p>Emoji show who owns the work, whether it is moving, and which model and harness are running it.</p></article>
+          <article><span>03</span><h3>Context has a place</h3><p>Channels hold domains. Threads hold sessions. Notifications return you only when your judgment or hands are needed.</p></article>
+          <article><span>04</span><h3>Everything comes back</h3><p>Code, documents, diagrams, videos, and live artifacts return to the conversation with their provenance intact.</p></article>
+        </div>
+      </section>
 
-  <section id="thesis" class="band">
-    <h2 class="section-title">The ladder</h2>
-    <ol class="ladder" aria-label="Layers of computing">
-      <li><span class="rung-name">Hardware</span><span class="rung-note">the machine</span></li>
-      <li><span class="rung-name">Firmware</span><span class="rung-note">runs the machine</span></li>
-      <li><span class="rung-name">Software</span><span class="rung-note">runs on the machine</span></li>
-      <li class="top"><span class="rung-name">Humanware</span><span class="rung-note">you, and everything you have built to run yourself</span></li>
-    </ol>
-    <p class="pull">Each rung operates the one below it. Every rung got an operating system except the top one.</p>
-    <p class="body"><em>Humanware</em> is the layer. <strong>HumanwareOS</strong> is the project that operates it.</p>
-  </section>
+      <section class="system" id="system">
+        <div class="section-intro">
+          <p class="section-label">A human-first system</p>
+          <h2>Two agents. One human. Every model.</h2>
+          <p>My system splits life and work so each gets a durable partner without splitting me in two. Your system should be just as personal.</p>
+        </div>
+        <div class="duality">
+          <article class="agent-panel liv">
+            <div class="agent-orbit"><span>Liv</span></div>
+            <p class="panel-label">Personal</p>
+            <h3>Protect the life.</h3>
+            <p>Liv carries personal context, household operations, health, cadence, and the commitments that make work worth doing.</p>
+          </article>
+          <div class="human-center"><span>Ariel</span><small>0 + 1<br>whole system</small></div>
+          <article class="agent-panel max">
+            <div class="agent-orbit"><span>Max</span></div>
+            <p class="panel-label">Work</p>
+            <h3>Move the work.</h3>
+            <p>Max carries strategy, products, content, priorities, and the discipline to make tradeoffs instead of accumulating projects.</p>
+          </article>
+        </div>
+      </section>
 
-  <section id="challenge" class="band split">
-    <div class="col">
-      <h2 class="section-title">The problem</h2>
-      <p class="body">Agents invert computing. We used to work for the tools. Now the tools work for us — and that is a bigger change than it sounds, because directing work is harder than doing it. More decisions, more context to hold, more threads running at once.</p>
-      <p class="body">I tried the new tools built for this. Conductor. Superset. Paperclip. A whole workflow in Notion. Each one was a new surface to learn, a new place to check, and more friction exactly where I needed less of it.</p>
-    </div>
-    <div class="col">
-      <h2 class="section-title">The answer was already open</h2>
-      <p class="body">Slack solved this at my previous companies. Threads, channels, status, notifications, who is working on what — the model for coordinating parallel work already exists, and it is one most people already carry in their heads.</p>
-      <p class="body">So the interface is not new. The agents move in behind it.</p>
-    </div>
-  </section>
+      <section class="proof">
+        <p class="section-label">What it does today</p>
+        <div class="proof-grid">
+          <article><strong>Builds</strong><p>Agents work in GitHub through Codex, Claude Code, OpenCode, Pi, or whatever comes next.</p></article>
+          <article><strong>Operates</strong><p>Sessions, security, model use, cost, and status stay visible instead of disappearing into black boxes.</p></article>
+          <article><strong>Publishes</strong><p>Turn the result into a web artifact, share a file, post a Loom, or archive it for later.</p></article>
+          <article><strong>Remembers</strong><p>Plain Markdown memory travels across agents, models, and vendors. The valuable context remains yours.</p></article>
+        </div>
+      </section>
 
-  <section id="vision" class="band">
-    <h2 class="section-title">Human first</h2>
-    <p class="pull">We got good at context engineering for agents. We are still years behind on context engineering for humans.</p>
-    <div class="grid">
-      <article><h3>Everything through one surface</h3><p>Mental load, running a team of agents, status, notifications, thread visibility, channel context — one place, not eight dashboards.</p></article>
-      <article><h3>Parallel threads without going crazy</h3><p>Many agents running at once is only useful if a person can still see the whole board. That constraint drives every design decision here.</p></article>
-      <article><h3>Opinionated, and yours to change</h3><p>Built for how I work, on purpose. It is a distro model: fork it, keep the spine, swap the parts that are about you.</p></article>
-      <article><h3>No lock-in</h3><p>Any harness, any model, memory as markdown in git repos. Nothing important lives inside a vendor you cannot export from.</p></article>
-      <article><h3>Local models, tested honestly</h3><p>Run sensitive work against local models. Privacy, cost, and real benchmarks instead of assumptions.</p></article>
-      <article><h3>Personal and work, kept apart</h3><p>Two domains, one system. The duality is a feature, not a compromise — it is the piece of this I keep coming back to.</p></article>
-    </div>
-  </section>
+      <section class="architecture" id="stack">
+        <div class="section-intro">
+          <p class="section-label">The stack</p>
+          <h2>Local where it matters.<br>Portable everywhere.</h2>
+          <p>A Mac mini runs the system. Slack reaches it securely through Tailscale. OpenClaw routes each thread to the right agent, harness, and model. GitHub holds the code and memory. Doppler holds the keys.</p>
+        </div>
+        <div class="stack-diagram" role="img" aria-label="Slack on phone and laptop connects through Tailscale to OpenClaw on a Mac mini, which routes to agents, harnesses, models, memory, GitHub, and Doppler">
+          <div class="stack-node entry"><small>Command surface</small><strong>Slack</strong><span>phone · laptop · web</span></div>
+          <div class="connector"><span>secure via Tailscale</span></div>
+          <div class="stack-node core"><small>Mac mini</small><strong>OpenClaw</strong><span>one thread · one session</span></div>
+          <div class="branch-lines" aria-hidden="true"></div>
+          <div class="stack-branches">
+            <div><small>Agents</small><strong>Liv · Max</strong><span>definitions + memory</span></div>
+            <div><small>Harnesses</small><strong>Codex · Claude · Pi</strong><span>replaceable executors</span></div>
+            <div><small>Models</small><strong>OpenAI · Anthropic · Local</strong><span>choice per mission</span></div>
+            <div><small>Durable state</small><strong>GitHub · Markdown · Doppler</strong><span>portable + owned</span></div>
+          </div>
+        </div>
+      </section>
 
-  <section id="features" class="band">
-    <h2 class="section-title">What it does today</h2>
-    <div class="feature-rows">
-      <div class="frow"><div class="fnum">01</div><div><h3>Two agents, two domains</h3><p>Liv runs personal and life. Max runs the work. Separate memory, separate voice, one system — the 0 and the 1 of it.</p></div></div>
-      <div class="frow"><div class="fnum">02</div><div><h3>Status you can read at a glance</h3><p>An emoji language on every thread: lifecycle state, which agent has it, which harness ran it, which model answered. You know where a thread stands without opening it.</p></div></div>
-      <div class="frow"><div class="fnum">03</div><div><h3>It builds itself in the open</h3><p>Stats, security posture, token spend, live sessions — the system reports on its own operation, and the reports are part of the product.</p></div></div>
-      <div class="frow"><div class="fnum">04</div><div><h3>Artifacts, published</h3><p>Anything an agent makes can become a real page on the web: internal reference one minute, a shareable link the next. Archived, with provenance coming.</p></div></div>
-      <div class="frow"><div class="fnum">05</div><div><h3>Any integration</h3><p>If it has an API, it can be a channel, a command, or a scheduled job. The runtime is the adapter layer.</p></div></div>
-    </div>
-  </section>
+      <section class="principles">
+        <p class="section-label">The opinionated parts</p>
+        <div class="principle-lines">
+          <p><span>01</span><strong>Human first.</strong> Optimize the system for your attention, not the agent’s convenience.</p>
+          <p><span>02</span><strong>Avoid lock-in.</strong> Agents, models, harnesses, and interfaces must remain replaceable.</p>
+          <p><span>03</span><strong>Privacy is architectural.</strong> Run local models when the data, cost, or benchmark demands it.</p>
+          <p><span>04</span><strong>Context compounds.</strong> The system gets better because it writes lessons back into durable memory.</p>
+          <p><span>05</span><strong>Built in public.</strong> The system builds, observes, and explains itself as part of the work.</p>
+        </div>
+      </section>
 
-  <section id="architecture" class="band">
-    <h2 class="section-title">Architecture</h2>
-    <p class="body arch-intro">Deliberately boring, deliberately replaceable. The human sits in front of Slack; everything else runs on one machine at home.</p>
-    <div class="stack">
-      <div class="node">
-        <h3>You</h3>
-        <p class="node-sub">Slack, on a laptop</p>
-        <ul><li>Threads as sessions</li><li>Channels as context</li><li>Reactions as status</li></ul>
-      </div>
-      <div class="link" aria-hidden="true"><span>Tailscale</span></div>
-      <div class="node wide">
-        <h3>Mac mini</h3>
-        <p class="node-sub">the whole system, on hardware you own</p>
-        <ul class="two-up">
-          <li><strong>Agents</strong> — definitions and memory</li>
-          <li><strong>OpenClaw</strong> — the runtime</li>
-          <li><strong>Any harness</strong> — Claude Code, Codex, OpenCode, Pi</li>
-          <li><strong>Any model</strong> — Anthropic, OpenAI, local, OpenRouter</li>
-          <li><strong>Unified memory</strong> — git repos, markdown files</li>
-          <li><strong>Doppler</strong> — key management</li>
-          <li><strong>GitHub</strong> — code, one thread per session</li>
-          <li><strong>Cloudflare</strong> — custom domains, automated</li>
-        </ul>
-      </div>
-    </div>
-    <p class="body">Three things you pay for, and they are worth separating: the framework, which is free and open; the products it drives, which you probably already pay for; and running it, which is your model spend plus a machine in the corner of a room.</p>
-  </section>
+      <section class="closing">
+        <p class="section-label">Version 1</p>
+        <h2>Build the system that lets you stay human.</h2>
+        <p>HumanwareOS is open source, early, and real. I built it for myself because the future arrived without an operating manual. Now you can fork it and make it yours.</p>
+        <a class="button primary" href="https://github.com/arieldiaz/life-os">Follow the build on GitHub <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
 
-  <section class="band closing">
-    <h2 class="section-title">Where this goes</h2>
-    <p class="body">This is v0 of a system I use every day for real work and a real life. The open question I keep circling is where the value actually accrues as agents get better — in the models, in the harnesses, or in the accumulated context of one particular person. I am betting on the last one, and building as if that is true.</p>
-    <div class="actions">
-      <a class="btn primary" href="https://github.com/arieldiaz/life-os">Read the code <span aria-hidden="true">↗</span></a>
-      <a class="btn" href="https://arieldiaz.com">Ariel Diaz <span aria-hidden="true">↗</span></a>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <p>HumanwareOS — built in public by <a href="https://arieldiaz.com">Ariel Diaz</a>.</p>
-  <p class="dim">Open source. Fork it, keep the spine, change the parts that are about you.</p>
-</footer>
-
-</body>
+    <footer>
+      <a class="wordmark" href="/">
+        <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M8 10v24M36 10v24M8 22h28"></path><circle cx="8" cy="10" r="3"></circle><circle cx="36" cy="34" r="3"></circle></svg>
+        <span>HumanwareOS</span>
+      </a>
+      <p>Built in public by <a href="https://arieldiaz.com">Ariel Diaz</a>.</p>
+      <p>Open source · 2026</p>
+    </footer>
+  </body>
 </html>
