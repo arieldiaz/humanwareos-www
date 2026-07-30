@@ -118,12 +118,14 @@ h2.big {
   min-height: 44px; display: inline-flex; align-items: center;
 }
 .bar nav a:hover { color: var(--ink); background: var(--panel2); }
-.bar nav a.ver {
-  color: var(--ocean-soft); font-family: var(--mono); font-size: 11px;
-  border: 1px solid var(--line);
+.bar nav a.gh-link {
+  padding: 0; margin-left: 8px;
+  width: 44px; justify-content: center;
+  color: var(--dim);
 }
-.bar nav a.ver:hover { border-color: var(--ocean); background: transparent; }
-@media (max-width: 860px) { .bar nav a:not(.ver) { display: none; } }
+.bar nav a.gh-link:hover { color: var(--ink); background: transparent; }
+.bar nav .gh { width: 21px; height: 21px; fill: currentColor; display: block; }
+@media (max-width: 860px) { .bar nav a:not(.gh-link) { display: none; } }
 
 /* ---------- sections ---------- */
 
