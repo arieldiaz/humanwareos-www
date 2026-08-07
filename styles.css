@@ -111,6 +111,7 @@ h2.big {
   display: inline-flex; align-items: center; gap: 10px;
   text-decoration: none; font-weight: 600; font-size: 15px; letter-spacing: -0.01em;
 }
+.brandmark img { width: 31px; height: 31px; object-fit: contain; }
 .bar nav { display: flex; align-items: center; gap: 4px; }
 .bar nav a {
   padding: 9px 11px; border-radius: 4px;
@@ -135,7 +136,29 @@ h2.big {
   padding: clamp(46px, 6vw, 78px) var(--gut);
   border-bottom: 1px solid var(--line);
 }
-.hero { padding-top: clamp(52px, 7vw, 92px); }
+.hero {
+  display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(240px, .6fr);
+  gap: clamp(30px, 6vw, 80px); align-items: center;
+  overflow: hidden;
+  padding-top: clamp(52px, 7vw, 92px);
+}
+.hero-copy { min-width: 0; }
+.hero-mark { min-width: 0; max-width: 100%; margin: 0; text-align: center; }
+.hero-mark img {
+  display: block; width: min(100%, 410px); margin-inline: auto;
+  filter: drop-shadow(0 20px 34px rgba(0,0,0,.3));
+}
+.hero-mark figcaption {
+  max-width: 34ch; margin: 12px auto 0;
+  color: var(--dim); font-family: var(--mono); font-size: 10.5px; line-height: 1.45;
+}
+.hero .stats { grid-column: 1 / -1; }
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-mark { grid-row: 1; }
+  .hero-mark img { width: min(72vw, 310px); }
+  .hero-copy h1 { max-width: 100%; font-size: clamp(29px, 8.1vw, 36px); overflow-wrap: anywhere; }
+}
 
 .acts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 .btn {
@@ -297,6 +320,25 @@ h2.big {
 .state.own { border-top: 2px solid var(--fire); }
 @media (max-width: 900px) { .cast { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 460px) { .cast { grid-template-columns: 1fr; } }
+
+/* ---------- personified agents ---------- */
+
+.cast-intro {
+  max-width: 68ch; margin: 16px 0 0;
+  color: var(--dim); font-size: 16px; line-height: 1.55;
+}
+.mark-story {
+  display: grid; grid-template-columns: 130px 1fr; gap: 22px; align-items: center;
+  margin-top: 22px; padding: 18px 20px;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--panel);
+}
+.mark-story img { width: 130px; }
+.mark-story p { margin: 0; max-width: 60ch; color: var(--dim); font-size: 14px; line-height: 1.5; }
+.mark-story strong { color: var(--ink); }
+@media (max-width: 560px) {
+  .mark-story { grid-template-columns: 84px 1fr; gap: 14px; padding: 15px; }
+  .mark-story img { width: 84px; }
+}
 
 /* ---------- the cast ---------- */
 
