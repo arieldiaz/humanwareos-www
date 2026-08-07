@@ -26,7 +26,7 @@ secondary accent; fire carries the primary. The mark is the layer stack with
 its base rung split ocean / grey / fire — life and work meeting at the
 foundation.
 
-Dark only for now. Light mode is the next pass.
+Dark and light modes follow the visitor's system preference automatically.
 
 ## Preview
 
