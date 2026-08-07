@@ -36,12 +36,15 @@ python3 -m http.server 4173
 
 ## Deploy
 
-Cloudflare Pages project `humanwareos-www`, custom domain `www.humanwareos.com`.
-No build command; the repo root is the output.
+Cloudflare Pages project `humanwareos-www`, custom domains `humanwareos.com` and
+`www.humanwareos.com`. The project is connected to this GitHub repository and
+automatically deploys every push to `main`. No build command; the repo root is
+the output.
 
-```sh
-npx wrangler pages deploy . --project-name humanwareos-www --branch main
-```
+Git integration is the default deployment mode for every site backed by a
+repository. Direct Upload is reserved for a site with no source repository or
+one whose deployment is deliberately owned by another CI system.
 
-The token needs Account → Cloudflare Pages → Edit and Zone → DNS → Edit on
-`humanwareos.com`. Key names only — never a value in this repo.
+Wrangler is a fallback only. If it is ever needed, the token needs Account →
+Cloudflare Pages → Edit and Zone → DNS → Edit on `humanwareos.com`. Key names
+only — never a value in this repo.
