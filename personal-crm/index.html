@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal CRM — remember the relationship, not the database</title>
+<meta name="description" content="A personal CRM that listens for promises, remembers context, and helps you stay close to the people who matter—without turning relationships into data entry.">
+<meta name="theme-color" content="#0c0d0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://www.humanwareos.com/personal-crm/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.humanwareos.com/personal-crm/">
+<meta property="og:title" content="Remember the relationship, not the database">
+<meta property="og:description" content="HumanwareOS turns contacts, conversations, calendars, and ordinary notes into a relationship memory you control.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/assets/humanwareos-icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/humanwareos-icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/personal-crm/personal-crm.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brandmark" href="/">
+    <img src="/assets/humanwareos-mark.webp" alt="">
+    <span>HumanwareOS</span>
+  </a>
+  <nav aria-label="Personal CRM sections">
+    <a href="#how">How it works</a>
+    <a href="#trust">Trust</a>
+    <a href="#connects">Connects</a>
+    <a class="gh-link" href="https://github.com/arieldiaz/humanwareos" aria-label="HumanwareOS on GitHub" title="HumanwareOS on GitHub"><svg class="gh" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.07-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A7.995 7.995 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></a>
+  </nav>
+</header>
+<main id="main">
+  <section class="pad crm-hero">
+    <div>
+      <p class="lbl">A focused HumanwareOS experiment · personal CRM</p>
+      <h1>Remember the relationship.<br><em>Not the database.</em></h1>
+      <p class="sub">Your contacts know names. Your calendar knows meetings. Your inbox knows conversations. None of them remember the whole person—or what you promised them.</p>
+      <div class="acts">
+        <a class="btn on" href="https://github.com/arieldiaz/humanwareos/issues/new?title=Personal%20CRM%20alpha&amp;body=The%20person%20or%20promise%20I%20most%20often%20lose%20track%20of%20is%3A%0A%0AI%20currently%20use%3A%20Apple%20%2F%20Google%20%2F%20both">Request the alpha <span aria-hidden="true">↗</span></a>
+        <a class="btn" href="#how">See the loop <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="privacy-line">Open source · private by default · Apple and Google friendly</p>
+    </div>
+    <div class="relationship-brief" aria-label="Example relationship brief">
+      <div class="brief-head"><span class="pulse" aria-hidden="true"></span><span>relationship brief</span><time datetime="2026-08-08">today</time></div>
+      <article>
+        <span class="initial ocean" aria-hidden="true">E</span>
+        <div><strong>Emma</strong><p>You said you would send the product outline Friday.</p><small>Promise · from your note · due today</small></div>
+        <span class="state">confirm</span>
+      </article>
+      <article>
+        <span class="initial fire" aria-hidden="true">R</span>
+        <div><strong>Roman</strong><p>Last meaningful conversation was six weeks ago.</p><small>Suggested · based on calendar and mail</small></div>
+        <span class="state quiet">later</span>
+      </article>
+      <article>
+        <span class="initial mix" aria-hidden="true">M</span>
+        <div><strong>Maya</strong><p>Her new role may connect to the Block introduction.</p><small>Proposed fact · review before saving</small></div>
+        <span class="state">review</span>
+      </article>
+      <div class="ask"><span aria-hidden="true">›</span><span>Who am I overdue to follow up with?</span></div>
+    </div>
+  </section>
+
+  <section class="pad" id="how">
+    <p class="lbl">01 — One loop</p>
+    <h2 class="big">You live the relationship. Your agents keep the threads.</h2>
+    <ol class="crm-loop">
+      <li><span>01</span><strong>Connect</strong><p>Contacts, calendar, and email stay where they are.</p></li>
+      <li><span>02</span><strong>Notice</strong><p>Agents find promises, important dates, changes, and open loops.</p></li>
+      <li><span>03</span><strong>Confirm</strong><p>Nothing sensitive becomes memory until you approve it.</p></li>
+      <li><span>04</span><strong>Act</strong><p>Ask who needs attention and get a few choices with reasons.</p></li>
+    </ol>
+  </section>
+
+  <section class="pad trust" id="trust">
+    <p class="lbl">02 — Relationship software should not feel like surveillance</p>
+    <div class="trust-grid">
+      <h2 class="big">The person is not a lead. The relationship is not a score.</h2>
+      <div class="rules">
+        <p><strong>Proposed, not presumed.</strong><span>Agents show their source and confidence. You decide what becomes durable.</span></p>
+        <p><strong>Private, even in multiplayer.</strong><span>Inviting someone into a shared space never exposes your private notes about them.</span></p>
+        <p><strong>Useful without lock-in.</strong><span>Your source systems remain Apple and Google. HumanwareOS coordinates them.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad" id="connects">
+    <p class="lbl">03 — Plays well with the systems already in your life</p>
+    <h2 class="big">One relationship. Many places it leaves evidence.</h2>
+    <div class="connectors" aria-label="Planned connectors">
+      <div><span class="connector-mark apple" aria-hidden="true">●</span><strong>Apple</strong><p>Contacts · Calendar · Mail</p></div>
+      <div><span class="connector-mark google" aria-hidden="true">G</span><strong>Google</strong><p>Contacts · Calendar · Gmail</p></div>
+      <div><span class="connector-mark buzz" aria-hidden="true">B</span><strong>Buzz</strong><p>People · agents · shared spaces</p></div>
+    </div>
+    <p class="note">The first test starts small: one contact source, one weekly brief, and one shared space. No automatic messages. No scraped dossiers.</p>
+  </section>
+
+  <section class="crm-close">
+    <p class="lbl">Personal CRM is one doorway into HumanwareOS</p>
+    <h2>Who would you remember better if the system carried the context?</h2>
+    <p>We are testing this in the open before building the whole thing.</p>
+    <div class="acts">
+      <a class="btn on" href="https://github.com/arieldiaz/humanwareos/issues/new?title=Personal%20CRM%20alpha&amp;body=The%20person%20or%20promise%20I%20most%20often%20lose%20track%20of%20is%3A%0A%0AI%20currently%20use%3A%20Apple%20%2F%20Google%20%2F%20both">Request the alpha <span aria-hidden="true">↗</span></a>
+      <a class="btn" href="/">Explore HumanwareOS</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>HumanwareOS · L3 · built in public by <a href="https://www.arieldiaz.com">Ariel Diaz</a></p>
+  <p class="dim">Focused doorway. Shared framework. No relationship database to maintain.</p>
+</footer>
+</body>
+</html>
