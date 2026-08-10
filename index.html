@@ -35,6 +35,7 @@
     <a href="#sessions">Sessions</a>
     <a href="#cast">The cast</a>
     <a href="#stack">Stack</a>
+    <a href="#start">Start</a>
     <a href="/records/">Records</a>
     <a class="gh-link" href="https://github.com/arieldiaz/humanwareos" aria-label="HumanwareOS on GitHub" title="HumanwareOS on GitHub"><svg class="gh" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.07-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A7.995 7.995 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg></a>
   </nav>
@@ -48,7 +49,8 @@
       <h1>Every layer of computing has an operating system.<br><em>The top one never got one.</em></h1>
       <p class="sub">AI made producing work cheap. It did not make following it cheap. The bottleneck is what one person can hold in their head.</p>
       <div class="acts">
-        <a class="btn on" href="https://github.com/arieldiaz/humanwareos">Read the source <span aria-hidden="true">↗</span></a>
+        <a class="btn on" href="https://github.com/arieldiaz/humanwareos/blob/main/docs/getting-started.md">Start the setup <span aria-hidden="true">↗</span></a>
+        <a class="btn" href="https://github.com/arieldiaz/humanwareos">Read the source <span aria-hidden="true">↗</span></a>
         <a class="btn" href="https://www.arieldiaz.com/videos/introducing-humanwareos/">Watch the 29 min <span aria-hidden="true">↗</span></a>
       </div>
     </div>
@@ -188,8 +190,51 @@
     <p class="note">Every swappable row has already been swapped at least once.</p>
   </section>
 
+  <section class="pad" id="start">
+    <p class="lbl">07 — Getting started</p>
+    <div class="start-head">
+      <h2 class="big">Start with the agent. Let it build the rest with you.</h2>
+      <p class="sub">Configure one durable agent locally, then give it the machine and the guide. It should drive every safe terminal, API, and UI step. You step in for identity, consent, and secrets.</p>
+    </div>
+
+    <ol class="setup" aria-label="The path to a working HumanwareOS agent">
+      <li>
+        <span class="setup-n">1</span>
+        <div><strong>Shape the agent</strong><p>Choose its remit, voice, boundaries, and first strategy.</p></div>
+        <span class="owner both">Agent + human</span>
+      </li>
+      <li>
+        <span class="setup-n">2</span>
+        <div><strong>Install the runtime</strong><p>OpenClaw connects the model, files, tools, and background service.</p></div>
+        <span class="owner agent">Agent drives</span>
+      </li>
+      <li>
+        <span class="setup-n">3</span>
+        <div><strong>Secure the keys</strong><p>Doppler holds credentials. Values never enter chat, files, logs, or git.</p></div>
+        <span class="owner human">Human authenticates</span>
+      </li>
+      <li>
+        <span class="setup-n">4</span>
+        <div><strong>Connect Slack</strong><p>Start free with Socket Mode—no public URL or tunnel required.</p></div>
+        <span class="owner human">Human approves</span>
+      </li>
+      <li class="proof">
+        <span class="setup-n">5</span>
+        <div><strong>Prove the handoff</strong><p>Slack → runtime → agent → tools → reply in the same thread.</p></div>
+        <span class="owner agent">Agent verifies</span>
+      </li>
+    </ol>
+
+    <div class="reqs">
+      <div><span class="lbl">Core setup</span><p>Mac · model access · Slack Free · Doppler · GitHub</p></div>
+      <div><span class="lbl">Full system</span><p>Cloudflare · your domain · backups · local capture</p></div>
+      <a class="btn on" href="https://github.com/arieldiaz/humanwareos/blob/main/docs/getting-started.md">Follow the complete guide <span aria-hidden="true">↗</span></a>
+    </div>
+    <p class="note">Buzz is the intended bundled path once it is reliable enough. Slack is the pragmatic starting surface today.</p>
+  </section>
+
   <section class="pad" id="cost">
-    <p class="lbl">07 — What it costs</p>
+    <p class="lbl">08 — What it costs</p>
     <div class="cost">
       <div class="bucket"><span class="lbl">Framework</span><strong>Free</strong><p>Open source. Fork it, keep the spine, change the parts that are about you.</p><p class="fig">$0 / mo</p></div>
       <div class="bucket"><span class="lbl">Products</span><strong>Already paying</strong><p>Slack for the history, a model subscription. Nothing new is introduced here.</p><p class="fig unset">— / mo</p></div>

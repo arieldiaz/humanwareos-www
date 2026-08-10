@@ -3,8 +3,8 @@
 The public site for [www.humanwareos.com](https://www.humanwareos.com).
 
 HumanwareOS is the upstream framework people fork. The code lives in
-[`arieldiaz/life-os`](https://github.com/arieldiaz/life-os) (rename to
-`humanwareos` pending). This repo is only the site.
+[`arieldiaz/humanwareos`](https://github.com/arieldiaz/humanwareos). This repo
+is only the site.
 
 ## Stack
 

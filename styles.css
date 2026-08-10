@@ -394,6 +394,62 @@ h2.big {
 }
 @media (max-width: 560px) { .spec tbody th { width: 92px; } }
 
+/* ---------- getting started ---------- */
+
+.start-head {
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(24px, 5vw, 64px);
+  align-items: end;
+}
+.start-head .sub { margin: 0; }
+.setup {
+  margin: 28px 0 0; padding: 0; list-style: none;
+  border-top: 1px solid var(--line);
+}
+.setup li {
+  display: grid; grid-template-columns: 38px minmax(0, 1fr) auto;
+  gap: 16px; align-items: center;
+  min-height: 82px; padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+}
+.setup li:hover { background: var(--panel); }
+.setup-n {
+  color: var(--fire); font-family: var(--mono); font-size: 11px;
+}
+.setup strong {
+  display: block; font-size: 15px; font-weight: 600; letter-spacing: -0.01em;
+}
+.setup p { margin: 3px 0 0; color: var(--dim); font-size: 13px; }
+.owner {
+  padding: 5px 8px; border: 1px solid currentColor; border-radius: 999px;
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em;
+  text-transform: uppercase; white-space: nowrap;
+}
+.owner.agent { color: var(--ocean-soft); }
+.owner.human { color: var(--fire); }
+.owner.both { color: var(--dim); }
+.setup .proof {
+  border: 1px solid var(--ocean); border-top: 0;
+  background: linear-gradient(90deg, rgba(59,163,196,.12), transparent 72%);
+}
+.reqs {
+  display: grid; grid-template-columns: 1fr 1fr auto; gap: 24px;
+  align-items: center; margin-top: 22px;
+}
+.reqs p { margin: 5px 0 0; color: var(--dim); font-size: 12.5px; }
+.reqs .btn { margin-left: auto; }
+@media (max-width: 760px) {
+  .start-head { grid-template-columns: 1fr; }
+  .start-head .sub { margin-top: 0; }
+  .reqs { grid-template-columns: 1fr 1fr; }
+  .reqs .btn { grid-column: 1 / -1; margin-left: 0; justify-self: start; }
+}
+@media (max-width: 560px) {
+  .setup li { grid-template-columns: 26px 1fr; align-items: start; }
+  .setup .owner { grid-column: 2; justify-self: start; }
+  .reqs { grid-template-columns: 1fr; }
+  .reqs .btn { grid-column: auto; }
+}
+
 /* ---------- cost ---------- */
 
 .cost { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; margin-top: 22px; }
