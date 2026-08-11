@@ -3,6 +3,19 @@
     <channel>
         <title>HumanwareOS</title>
         <item>
+            <title>0.2.2</title>
+            <pubDate>Mon, 10 Aug 2026 21:54:22 -0400</pubDate>
+            <link>https://www.humanwareos.com/</link>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS-0.2.2.zip" length="2511746" type="application/octet-stream" sparkle:edSignature="zo87hphCn4ID/dG4B7gmNzhsgxJqv7V2vUs7SdjFCkr1eBOvQL6bMR01T5BKkJ2jMWeWArzbgavE3mne3ifeAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS4-3.delta" sparkle:deltaFrom="3" length="28862" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="r2uLdr5y5baHta4tZFGbNOw2QUB0wGbe8U2fAz5y2YtIoDiTsZbW3Q6hWMt13EhR1xeDBjcK0aNnDCLEvgorBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.1</title>
             <pubDate>Mon, 10 Aug 2026 21:43:10 -0400</pubDate>
             <link>https://www.humanwareos.com/</link>
