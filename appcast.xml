@@ -3,6 +3,21 @@
     <channel>
         <title>HumanwareOS</title>
         <item>
+            <title>0.2.4</title>
+            <pubDate>Sat, 15 Aug 2026 13:24:29 -0400</pubDate>
+            <link>https://www.humanwareos.com/</link>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.2.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS-0.2.4.zip" length="2525260" type="application/octet-stream" sparkle:edSignature="4AzhbUCb7CY/W9CqYpVk01mL4es1A7MWm1HPKIwxoixr3GHGFrsNMXN//v089Ld6zk/Zd8UHbzeDZ0xEbV0vBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS6-5.delta" sparkle:deltaFrom="5" length="46254" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="vyGnFOvSmNrmpu1QVYWK13CozokphO+wUF+uEElxsmeeZ/wQYEIWLQvPnbheJr3RX39ZV1zkM2T1JL8tUjbQAA=="/>
+                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS6-4.delta" sparkle:deltaFrom="4" length="47646" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wisdC6JEJBeOMUyYxj6GSAGqgsdhj66yvGCQGqhezZsez0FBgWE7bk+pmfAT1Ab/iPsJAMsTCsbu6YS4dwkzAw=="/>
+                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS6-3.delta" sparkle:deltaFrom="3" length="48822" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="roZZJ1M6n7gQg1LvSK8tgY1vLEqMcGKgGoxWnxetqVG0S8J51H1e0EAzfSMzB2iRDzhViL6bCm2rmGogCWBRBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.3</title>
             <pubDate>Mon, 10 Aug 2026 22:07:06 -0400</pubDate>
             <link>https://www.humanwareos.com/</link>
