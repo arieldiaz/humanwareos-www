@@ -3,6 +3,23 @@
     <channel>
         <title>HumanwareOS</title>
         <item>
+            <title>0.2.7</title>
+            <pubDate>Wed, 19 Aug 2026 15:03:35 -0400</pubDate>
+            <link>https://www.humanwareos.com/</link>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.2.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS-0.2.7.zip" length="2529128" type="application/octet-stream" sparkle:edSignature="NBiZQAM5bt0yq1XjddaC/zPbGxXj7sIPzghId/ErM1QNybvi21cCRcDE1ZdxpMm7qJcWs2Vj5MahMg8zVH84Cg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS9-8.delta" sparkle:deltaFrom="8" length="17882" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Jvp+h0Jjk/jIPLEHeqWhDNulLjfl4VNx81nx6+QVfXIa/dN9Y71OpDxWIo29qEmIidu3OqJDJSvVGISNn3DJAw=="/>
+                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS9-7.delta" sparkle:deltaFrom="7" length="23186" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="u5zlhVKMYWOxv9KjQzCvU9j+wCz6im7Ar7kqgv1ljHL2kXiheLAHuApQyEEFpJH7FAQxrrX2DoIwTmmG/jizDA=="/>
+                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS9-6.delta" sparkle:deltaFrom="6" length="29354" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6P98jnFEIC7aUprpoZfq/JbtxlZBWywiyAZV35ynjLGOBG9QCbGofW1paxUl6A70OdwGw+1mIO4Y//355CmrDw=="/>
+                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS9-5.delta" sparkle:deltaFrom="5" length="50586" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="bJ1Q2xzeSeyrvgzm7LxYfZVIlZ7/lnklpluP6up3ee0sGXa1nI2pykhBBcR9vKweBaVJ9xWERwAf3tN6F8vABw=="/>
+                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS9-4.delta" sparkle:deltaFrom="4" length="52378" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4fx6YN1AR2GpRNQS7hJbpeyEZvRKVWaLzxrOTGEVNExXGjANWTRzaupj6T9KvVjobv1ZL953Bc+0auXokzczBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.6</title>
             <pubDate>Wed, 19 Aug 2026 14:50:42 -0400</pubDate>
             <link>https://www.humanwareos.com/</link>
@@ -62,19 +79,6 @@
             <sparkle:deltas>
                 <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS5-4.delta" sparkle:deltaFrom="4" length="26470" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="14USX/V11WGDArHbdS6tQpArONMZFvLjSYSOGv+sJEkCfgOch2g9zGduwPvE8BYlM98O/oBVBEWQx+gPvQ0GDw=="/>
                 <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS5-3.delta" sparkle:deltaFrom="3" length="30614" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="zfq05vySk2cI6rtSGPUGYEyPKNbvi8j6H8dQDRiw/Xd7lNUi4+EUwi0S2uFaiotfGChaZ/mWm8UH2TJozA/WAg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.2.2</title>
-            <pubDate>Mon, 10 Aug 2026 21:54:22 -0400</pubDate>
-            <link>https://www.humanwareos.com/</link>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS-0.2.2.zip" length="2511746" type="application/octet-stream" sparkle:edSignature="zo87hphCn4ID/dG4B7gmNzhsgxJqv7V2vUs7SdjFCkr1eBOvQL6bMR01T5BKkJ2jMWeWArzbgavE3mne3ifeAA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://updates.humanwareos.com/releases/HumanwareOS4-3.delta" sparkle:deltaFrom="3" length="28862" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="r2uLdr5y5baHta4tZFGbNOw2QUB0wGbe8U2fAz5y2YtIoDiTsZbW3Q6hWMt13EhR1xeDBjcK0aNnDCLEvgorBw=="/>
             </sparkle:deltas>
         </item>
     </channel>
